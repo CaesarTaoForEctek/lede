@@ -7,23 +7,23 @@
 #
 name: 自定义action云编译OpenWrt-CI
 
-on:
-  schedule:
-    - cron: 0 20 * * *
-  push:
-    branches:
-      - master
+# on:
+  # schedule:
+   #  - cron: 0 20 * * *
+ #  push:
+   #  branches:
+   #    - master
 
-permissions:
-  contents: read
+# permissions:
+#   contents: read
 
 jobs:
 
-  build_openwrt:
+#   build_openwrt:
 
-    name: Build OpenWrt Firmware
+ #    name: Build OpenWrt Firmware
 
-    runs-on: ubuntu-22.04
+ #    runs-on: ubuntu-22.04
 
     steps:
       - name: Space cleanup and Initialization environment
